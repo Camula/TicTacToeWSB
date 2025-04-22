@@ -1,10 +1,10 @@
-
 from flask import Flask, request, jsonify, render_template_string
 import copy
 
 app = Flask(__name__)
 
-HTML = """<!DOCTYPE html>
+HTML = """
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -134,7 +134,8 @@ HTML = """<!DOCTYPE html>
     drawBoard();
   </script>
 </body>
-</html>"""
+</html>
+"""
 
 def check_winner(board):
     for i in range(3):
